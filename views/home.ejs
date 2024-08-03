@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('config/meta') -%>
+    <%- include('config/styles') -%>
+    <%- include('config/scripts') -%>
+    
+</head>
+<body>
+    <%- include('static/menu', { loged }) -%>
+    <%- include('static/cart') -%>
+    <%- include('pages/home', { products, stock }) -%>
+    <%- include('static/promove', { conteudo }) -%>
+    <%- include('static/footer') -%>
+</body>
+</html>

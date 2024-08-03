@@ -1,0 +1,175 @@
+.cart-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #9370DB;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.cart-button:hover {
+    background-color: #663399;
+}
+  
+.cart-sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 999;
+}
+
+.cart-sidebar-content {
+    padding: 16px;
+}
+
+.close-cart {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.cart-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-details p {
+    margin: 0;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.btn-add {
+    background-color: #9bed96;
+}
+
+.item-quantity button {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.shipping-section, .giftcode-section {
+    margin-top: 20px;
+}
+
+.shipping-section input, .giftcode-section input {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.shipping-section button, .giftcode-section button {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+}
+
+.total-section,
+.completedAdress {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#pay-button, .shipping-button, .checkout-button, 
+#submit {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#pay-button, .shipping-section button,
+.giftcode-section button,
+.checkout-button,
+.item-quantity button,
+#submit {
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+#pay-button, .shipping-section button,
+.giftcode-section button,
+.checkout-button,
+#submit {
+    background-color: #e8bfe8;
+}
+
+#pay-button, .shipping-section button:hover,
+.giftcode-section button:hover,
+.checkout-button:hover,
+.item-quantity button:hover .btn-add,
+#submit:hover {
+    background-color: #a26dbf;
+    color: white;
+}
+
+.delete-button {
+    background-color: #ed8c8c;
+}
+
+.delete-button:hover {
+    background-color: #f44444;
+}
+
+.shipping-section div {
+    margin-top: 20px;
+    margin-bottom:20px
+}
+
+#fretediv, #shippingForms {
+    margin-top: 20px;
+}
+
+#fretediv input, #shippingForms input {
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 8px;
+    margin-right: 10px;
+}
+.inputErr {
+    margin-top: -15px;
+}

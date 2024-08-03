@@ -1,0 +1,138 @@
+@media only screen and (max-width: 768px) {
+    
+    .pcmenu {
+        display: none;
+    }
+
+    .menu-button {
+        width: 50px;
+        height: 50px;
+        border: none;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: #9370DB;
+        color: #fff;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 999;
+    }
+    
+    .menu-button:hover {
+        background-color: #663399;
+    }
+    
+    .menu-sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #f2f2f2;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 999;
+    }
+    
+    .menu-sidebar-content {
+        padding: 16px;
+    }
+    
+    .close-menu {
+        position: absolute;
+        top: 0;
+        left: 25px; 
+        font-size: 36px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+        position: relative;
+        flex: 1;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px 15px;
+        display: block;
+        transition: background-color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        background-color: #9370DB;
+        color: #fff;
+    }
+        
+    nav ul li:hover {
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+
+    .menu-button, .menu-sidebar {
+        display: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+        position: relative;
+        flex: 1;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px 15px;
+        display: block;
+        transition: background-color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        background-color: #9370DB;
+        color: #fff;
+    }
+    
+    .submenu {
+        display: none;
+        position: absolute;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-top: none;
+        z-index: 1;
+        width: 100%;
+        left: 0;
+        text-align: left;
+    }
+    
+    .submenu li {
+        margin: 5px 0;
+    }
+    
+    nav ul li:hover .submenu {
+        display: block;
+    }
+}

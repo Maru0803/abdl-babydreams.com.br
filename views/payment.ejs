@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('config/meta') -%>
+    <%- include('config/styles') -%>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="/scripts/background.js"></script>
+    <script src="/scripts/scripts.js" defer></script>
+    <script src="/scripts/payment.js" defer></script>
+    <script>
+        var menuside = false;
+        var sidebar = false;
+
+        function openMenu() {
+            if (menuside === false) {
+                document.getElementById("menuSidebar").style.width = "400px";
+                menuside = true
+                if(sidebar) {
+                    sidebar = false
+                    document.getElementById("cartSidebar").style.width = "0";
+                }
+            } else {
+                document.getElementById("menuSidebar").style.width = "0";
+                menuside = false
+            }
+        }
+    </script>
+</head>
+<body>
+    <%- include('static/menu', { loged }) -%>
+    <%- include('pages/payment') -%>
+    <%- include('static/footer') -%>
+</body>
+</html>

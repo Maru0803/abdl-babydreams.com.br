@@ -1,0 +1,27 @@
+<main>
+    <p class="centertext"> Bem vindos(as) a Baby Dreams Store, aqui você encontra os melhores produtos ABDL a pronta
+      entrega do Brasil!</p>
+</main>
+<div>
+    <div class="orderslist"> 
+        <div class="textsorder"> 
+            <div class="ordertext"><p> Dados do pedido:</p></div>
+            <div class="ordertext"><p> ID do pedido: <%= order %> </p></div>
+            <div class="ordertext"><p> Valor pago: <%= info.total %> </p></div>
+            <div class="ordertext"><p> Frete: <%= info.value  %> - <%= info.type %> </p></div>
+            <div class="ordertext"><p> Desconto: <%= `-${(!info.desconto  || [0, "null"].includes(info.desconto) ? 0.00 : info.desconto) + ".00"} - ${info.cupom === "null" || !info.cupom ? "Nenhum cupom utilizado" : "Cupom utilizado: "+info.cupom}` %> </p></div>
+            <div class="ordertext"><p> status de envio: <%= !info.status || info.status === "null" ? "Aguardando envio" : `Enviado  - Rastreio ${info.rastreio}` %> </p></div>
+            <br> 
+            <div class="ordertext"><p> Dados de entrega:</p></div>
+            <div class="ordertext"><p> <%= info.nome %> - <%= info.cpf %></p></div>
+            <div class="ordertext"><p> <%= info.rua %>, <%= info.numero %> </p></div>
+            <div class="ordertext"><p> <%= info.bairro %> <%= info.cidade %>-<%= info.estado %> </p></div>
+            <% if(info.complemento && info.complemento !== "null") { %> 
+                <div class="ordertext"><p><%= info.complemento %></p></div>
+            <% } %>  
+            <br>
+            <div class="ordertext"><p> Itens comprados:</p></div>
+            <div id="cartItems"></div>
+        </div>
+    </div> 
+</div>

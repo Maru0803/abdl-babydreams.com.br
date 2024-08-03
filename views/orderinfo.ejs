@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('config/meta') -%>
+    <%- include('config/styles') -%>
+    <script src="/scripts/background.js"></script>
+    <script src="/scripts/scripts.js" defer></script>
+    <script>
+        let order = "<%- order %>"
+        fetch(`/apis/getdataorder?id=${order}`, {
+            method: 'GET',
+        }).then(response => {
+            return response.json();
+        }).then(async data => {
+            let cartItems = data.cart
+            let produtos = data.produtos
+            let cartItemsContainer = document.getElementById("cartItems");
+            cartItemsContainer.innerHTML = "";
+            Object.entries(cartItems).forEach(([a, b], i) => {
+                let item = produtos[a]
+                if (b > 0) {
+                    let itemElement = document.createElement("div");
+                    itemElement.classList.add("cart-item");
+                    itemElement.innerHTML = `
+                        <img src="${item.image}" alt="${item.description}">
+                        <div class="item-details">
+                        <p>${item.name}</p>
+                        <p>R$ ${item.price}</p>
+                        </div>
+                        <div class="item-quantity">
+                        <span>${b}</span>
+                        </div>
+                    `;
+                    cartItemsContainer.appendChild(itemElement);
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <%- include('static/menu', { loged }) -%>
+    <%- include('pages/orderinfo', { order, info }) -%>
+    <%- include('static/footer') -%>
+</body>
+</html>

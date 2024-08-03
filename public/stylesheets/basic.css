@@ -1,0 +1,205 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nerko One';
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    background-color: #c3b0e8;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.btnall, .centertext {
+    text-align: center;
+}
+
+.allitens, .add-to-cart {
+    bottom: 0;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #9370DB;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.allitens:hover, .add-to-cart:hover {
+    background-color: #8A2BE2;
+}
+
+.section {
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    body {
+        font-size: 10px
+    }
+
+    .house-border {
+        background-color: #f0f0f0;
+        padding: 10px;
+        border-style: solid;
+        border-width: 0 20px 20px 20px;
+        border-color: #ffffff #ffffff #ffffff #ffffff;
+        margin: 10px auto;
+        max-width: 700px;
+   }
+
+   .produtos-grid {
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 5px;
+        padding: 50px;
+    }
+    
+    .produto {
+        border: 1px solid #ccc;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .produto img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .add-to-cart {
+        margin:10px;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+
+    .house-border {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-style: solid;
+        border-width: 0 100px 100px 100px;
+        border-color: #ffffff #ffffff #ffffff #ffffff;
+        margin: 20px auto;
+        max-width: 900px;
+   }
+
+   .produtos-grid {
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        padding: 20px;
+   }
+
+    .produto {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .produto img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+.info-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.info-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info-item-text {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .info-item img {
+        max-width: 60%;
+        height: auto;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+}
+
+.orderslist {
+    display: flex;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    padding-left: 20px;
+}
+
+.textsorder {
+    width: 75%;
+}
+
+.orderbtn {
+    align-content: center;    
+}
+
+.btninfo {
+    cursor: pointer;
+    border: 6px solid #ffd0e9;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 10px;
+    background-color: #ffd0e9;
+}
+
+.btninfo:hover {
+    border: 6px solid #a26dbf;
+    background-color: #a26dbf;
+    color: white;
+}
+
+@media only screen and (max-width: 400px) {
+    
+    .orderslist {
+        width: 88%;
+        display: inline-block;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        margin-bottom: 10px;
+    }
+
+    .orderbtn {
+        margin-bottom: 10px;
+    }
+    
+}

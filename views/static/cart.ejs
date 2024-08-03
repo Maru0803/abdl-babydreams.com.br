@@ -1,0 +1,43 @@
+<div id="addModal" class="modal">
+    <div class="modal-content">
+        <img src="https://i.imgur.com/MGy6Jig.png" alt="banner de alerta ao adicionar produto no carrinho">
+    </div>
+</div>
+<div id="errModal" class="modal">
+    <div class="modal-content">
+        <img src="https://i.imgur.com/uuyHo9Q.png" alt="banner de alerta de erro interno">
+    </div>
+</div>
+<div id="outModal" class="modal">
+    <div class="modal-content">
+        <img src="https://i.imgur.com/3yJk2Zh.png" alt="banner de alerta que um dos produtos do carrinho agora esta indisponivel">
+    </div>
+</div>
+<div id="limitModal" class="modal">
+    <div class="modal-content">
+        <img src="https://i.imgur.com/wEWOY14.png" alt="banner de alerta de erro interno">
+    </div>
+</div>
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-sidebar-content">
+        <h2>Carrinho de Compras</h2>
+        <div id="cartItems"></div>
+        <div class="giftcode-section">
+            <input type="text" placeholder="Cupom">
+            <button id="giftButton">Aplicar</button>
+        </div>
+        <div class="shipping-section">
+            <input type="text" inputmode="numeric" maxlength="9" placeholder="CEP">
+            <button id="shipping-button">Aplicar</button>
+        </div>
+        <div id="displayFrete"></div>
+        <div class="total-section">
+            <p>Produto: R$ <span id="cartProduto">0</span></p>
+            <p>Frete: R$ <span id="cartFrete">0</span></p>
+            <p>Desconto: R$ <span id="cartGift">0</span></p>
+            <p>Total: R$ <span id="cartTotal">0</span></p>
+        </div>
+        <a href="/checkout"><button class="checkout-button">Checkout</button></a>
+    </div>
+</div>
+<button class="cart-button" onclick="openCart()">Cart</button>

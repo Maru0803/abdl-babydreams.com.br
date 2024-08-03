@@ -1,0 +1,79 @@
+<section></section>
+<div class="house-border">
+    <div id="loader">
+        <img src="https://media.tenor.com/mZBPjYg0q8cAAAAi/spin-namiko.gif" alt="Carregando...">
+    </div>
+    <header>
+        <a href="/">
+            <div class="title">
+                <span>B</span>
+                <span>a</span>
+                <span>b</span>
+                <span>y</span>
+                <span style="opacity: 0;">x</span>
+                <span>D</span>
+                <span>r</span>
+                <span>e</span>
+                <span>a</span>
+                <span>m</span>
+                <span>s</span>
+            </div>
+        </a>
+    </header>
+    <div class="menu-sidebar" id="menuSidebar">
+        <div class="menu-sidebar-content">
+            <nav>
+                <ul>
+                <li><a href="/lister?category=all">Todos Produtos</a> </li>         
+                <li><a href="/lister?category=fraldas">Fraldas</a></li>
+                <li><a href="/lister?category=bodys">Bodys</a></li>
+                <li><a href="/lister?category=acessorios">Acessorios</a></li>
+                <li><a href="/privacity">Politica de privacidade</a></li>
+                <% if (loged) { %>
+                    <li><a href="/auth/logout">Logout</a></li>
+                <% } else { %>
+                    <li><a href="/auth/auth">Login</a></li>
+                <% } %>
+                <li><a href="/orders">Pedidos</a></li>
+                <li><a href="https://discord.gg/y22bzwWUFv">Discord</a></li>
+                <li><a href="/privacity">Email</a></li>
+                <li><a href="https://twitter.com/MarulkChan?t=tYunGyAG342tO2mZ37ECHA&s=09">Twitter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="pcmenu">
+    <nav>
+        <ul>
+            <li class="menu1">
+                <a href="/lister?category=all">Categorias</a>
+                <ul class="submenu">
+                    <li><a href="/lister?category=fraldas">Fraldas</a></li>
+                    <li><a href="/lister?category=bodys">Bodys</a></li>
+                    <li><a href="/lister?category=acessorios">Acessorios</a></li>
+                </ul>
+            </li>
+            <li class="menu2">
+                <a>Sobre e Conta</a>
+                <ul class="submenu">
+                    <li><a href="/privacity">Politica de privacidade</a></li>
+                    <% if (loged) { %>
+                        <li><a href="/auth/logout">Logout</a></li>
+                    <% } else { %>
+                        <li><a href="/auth/auth">Login</a></li>
+                    <% } %>
+                    <li><a href="/orders">Pedidos</a></li>
+                </ul>
+            </li>
+            <li class="menu3">
+                <a href="/privacity">Contato</a>
+                <ul class="submenu">
+                    <li><a href="https://discord.gg/y22bzwWUFv">Discord</a></li>
+                    <li><a href="/privacity">Email</a></li>
+                    <li><a href="https://twitter.com/MarulkChan?t=tYunGyAG342tO2mZ37ECHA&s=09">Twitter</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    <button class="menu-button" onclick="openMenu()">Menu</button>
