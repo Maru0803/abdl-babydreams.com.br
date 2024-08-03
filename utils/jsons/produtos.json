@@ -2,7 +2,7 @@
     "fantasma": {
         "name": "fantasma",
         "category": "bodys",
-        "image": "https://i.imgur.com/5yolkaD.png",
+        "image": "https://i.imgur.com/evyagDl.png",
         "names": [
             "Body Fantasma",
             "Bodysuit Fantasma",
@@ -19,25 +19,25 @@
             "1 Peça"
         ],
         "info": {
-            "largura": 1,
-            "altura": 1,
-            "comprimento": 1,
+            "largura": 18,
+            "altura": 0.3,
+            "comprimento": 12,
             "peso": 0.1
         }
     },
-    "ursinho": {
-        "name": "ursinho",
+    "animais": {
+        "name": "animais",
         "category": "bodys",
-        "image": "https://i.imgur.com/5yolkaD.png",
+        "image": "https://i.imgur.com/Shhkxbg.png",
         "names": [
-            "Body Ursinho",
-            "Bodysuit Ursinho",
+            "Body animais",
+            "Bodysuit animais",
             "Bodysuit",
             "Body",
-            "ursinho"
+            "animais"
         ],
         "price": 90,
-        "description": "Bodysuit ABDL com estampa fofa de Ursinhos",
+        "description": "Bodysuit ABDL com estampa fofa de animais",
         "size": [
             "Tamanho M"
         ],
@@ -45,9 +45,9 @@
             "1 Peça"
         ],
         "info": {
-            "largura": 1,
-            "altura": 1,
-            "comprimento": 1,
+            "largura": 18,
+            "altura": 0.3,
+            "comprimento": 12,
             "peso": 0.1
         }
     },
@@ -71,9 +71,9 @@
             "5 Unidade avulsa"
         ],
         "info": {
-            "largura": 1,
-            "altura": 1,
-            "comprimento": 1,
+            "largura": 24,
+            "altura": 3,
+            "comprimento": 19,
             "peso": 0.2
         }
     },
@@ -102,9 +102,9 @@
             "5 Unidade avulsa"
         ],
         "info": {
-            "largura": 1,
-            "altura": 1,
-            "comprimento": 1,
+            "largura": 24,
+            "altura": 3,
+            "comprimento": 19,
             "peso": 0.2
         }
     },
@@ -131,16 +131,16 @@
             "5 Unidade avulsa"
         ],
         "info": {
-            "largura": 1,
-            "altura": 1,
-            "comprimento": 1,
+            "largura": 24,
+            "altura": 3,
+            "comprimento": 19,
             "peso": 0.2
         }
     },
     "babyusagi": {
         "name": "babyusagi",
         "category": "fraldas",
-        "image": "https://i.imgur.com/UsUk74q.png",
+        "image": "https://i.imgur.com/zYqMKNk.png",
         "names": [
             "Fralda Baby Usagi",
             "Baby usagi",
@@ -161,16 +161,16 @@
             "1 Unidade avulsa"
         ],
         "info": {
-            "largura": 1,
-            "altura": 1,
-            "comprimento": 1,
+            "largura": 24,
+            "altura": 3,
+            "comprimento": 19,
             "peso": 0.2
         }
     },
     "pastelpuffies": {
         "name": "pastelpuffies",
         "category": "fraldas",
-        "image": "https://i.imgur.com/UsUk74q.png",
+        "image": "https://i.imgur.com/Nn589A9.png",
         "names": [
             "Fralda Pastel Puffies",
             "Pastel Puffies",
@@ -190,22 +190,22 @@
             "1 Unidade avulsa"
         ],
         "info": {
-            "largura": 1,
-            "altura": 1,
-            "comprimento": 1,
+            "largura": 24,
+            "altura": 3,
+            "comprimento": 19,
             "peso": 0.2
         }
     },
     "chupeta1": {
         "name": "chupeta1",
         "category": "acessorios",
-        "image": "https://i.imgur.com/UsUk74q.png",
+        "image": "https://i.imgur.com/BckBH5p.png",
         "names": [
             "chupeta",
-            "azul"
+            "branca"
         ],
         "price": 50,
-        "description": "Chupeta ABDL Adulta lisa azul",
+        "description": "Chupeta ABDL Adulta lisa branca",
         "size": [
             "Tamanho 8"
         ],
@@ -213,16 +213,16 @@
             "1 Unidade"
         ],
         "info": {
-            "largura": 1,
-            "altura": 1,
-            "comprimento": 1,
+            "largura": 8,
+            "altura": 0.5,
+            "comprimento": 8,
             "peso": 0.1
         }
     }, 
     "chupeta2": {
         "name": "chupeta2",
         "category": "acessorios",
-        "image": "https://i.imgur.com/UsUk74q.png",
+        "image": "https://i.imgur.com/bhy3FlE.png",
         "names": [
             "chupeta",
             "rosa"
@@ -236,16 +236,16 @@
             "1 Unidade"
         ],
         "info": {
-            "largura": 1,
-            "altura": 1,
-            "comprimento": 1,
+            "largura": 8,
+            "altura": 0.5,
+            "comprimento": 8,
             "peso": 0.1
         }
     },    
     "chupeta3": {
         "name": "chupeta3",
         "category": "acessorios",
-        "image": "https://i.imgur.com/UsUk74q.png",
+        "image": "https://i.imgur.com/gYt7pZu.png",
         "names": [
             "chupeta",
             "preta"
@@ -259,9 +259,9 @@
             "1 Unidade"
         ],
         "info": {
-            "largura": 1,
-            "altura": 1,
-            "comprimento": 1,
+            "largura": 8,
+            "altura": 0.5,
+            "comprimento": 8,
             "peso": 0.1
         }
     }
