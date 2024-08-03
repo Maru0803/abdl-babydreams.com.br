@@ -87,7 +87,7 @@ router.get('/verifycartdata', isAuthorized, async (req, res) => {
         var list = [ 
             "babyusagi", "chupeta1", "chupeta2",
             "chupeta3", "fantasma", "huggies", "junior", 
-            "pastelpuffies", "ups", "ursinho"
+            "pastelpuffies", "ups", "animais"
         ]
 
         var cart = await database.ref(`cart/${req.user.sub}`).once("value")
@@ -122,7 +122,7 @@ router.get('/getdataorder', isAuthorized, async (req, res) => {
         var list = [ 
             "babyusagi", "chupeta1", "chupeta2",
             "chupeta3", "fantasma", "huggies", "junior", 
-            "pastelpuffies", "ups", "ursinho"
+            "pastelpuffies", "ups", "animais"
         ]
         var orderdata = await database.ref(`orders/${id}`).once("value")
         var cartItems = {}
