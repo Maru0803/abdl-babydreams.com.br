@@ -15,7 +15,7 @@ passport.deserializeUser(async (id, done) => {
 passport.use("home", new GoogleStrategy({
     clientID: process.env.clientID,
     clientSecret: process.env.clientSecret,
-    callbackURL: 'http://localhost:3000/auth/auth',
+    callbackURL: 'https://www.abdl-babydreams.com.br/auth/auth',
    scope: ['profile', 'email']
 }, async (accessToken, refreshToken, profile, done) => {
     try {
@@ -32,7 +32,7 @@ passport.use("home", new GoogleStrategy({
 passport.use("cart", new GoogleStrategy({
     clientID: process.env.clientID,
     clientSecret: process.env.clientSecret,
-    callbackURL: 'http://localhost:3000/auth/checkout',
+    callbackURL: 'https://www.abdl-babydreams.com.br/auth/checkout',
     scope: ['profile', 'email']
 }, async (accessToken, refreshToken, profile, done) => {
     try {
@@ -49,7 +49,7 @@ passport.use("cart", new GoogleStrategy({
 passport.use("order", new GoogleStrategy({
     clientID: process.env.clientID,
     clientSecret: process.env.clientSecret,
-    callbackURL: 'http://localhost:3000/auth/orders',
+    callbackURL: 'https://www.abdl-babydreams.com.br/auth/orders',
     scope: ['profile', 'email']
 }, async (accessToken, refreshToken, profile, done) => {
     try {
