@@ -19,7 +19,7 @@ function InitApp(app, express) {
 
     app.use((req, res, next) => {
         const origin = req.get('host');
-        if (origin === 'localhost:3000') {//'www.abdl-babydreams.com.br') {
+        if (origin === 'www.abdl-babydreams.com.br' || origin === 'eiwrpxjp9u.us-east-2.awsapprunner.com') {
             next();
         } else {
             res.status(200).send('Acesso Negado');
