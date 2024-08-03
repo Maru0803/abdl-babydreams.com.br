@@ -23,6 +23,9 @@ app.get('/', async (req, res) => {
 });
 
 InitRoutes(app);
+app.get('/sitemap.xml', async (req, res) => {    
+    res.sendFile(__dirname + '/public/sitemap.xml');
+});
 
 app.listen(8080, () => {
     console.log('Online')
@@ -30,6 +33,4 @@ app.listen(8080, () => {
 
 /*
 dashboard para atualizar status de pedidos
-atualizar as medidas dos produtos
-fazer funcao para reduzir o stock na api sucess
 */
