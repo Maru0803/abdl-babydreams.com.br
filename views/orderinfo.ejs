@@ -16,24 +16,28 @@
             let produtos = data.produtos
             let cartItemsContainer = document.getElementById("cartItems");
             cartItemsContainer.innerHTML = "";
-            Object.entries(cartItems).forEach(([a, b], i) => {
-                let item = produtos[a]
-                if (b > 0) {
-                    let itemElement = document.createElement("div");
-                    itemElement.classList.add("cart-item");
-                    itemElement.innerHTML = `
-                        <img src="${item.image}" alt="${item.description}">
-                        <div class="item-details">
-                        <p>${item.name}</p>
-                        <p>R$ ${item.price}</p>
-                        </div>
-                        <div class="item-quantity">
-                        <span>${b}</span>
-                        </div>
-                    `;
-                    cartItemsContainer.appendChild(itemElement);
-                }
-            })
+            if (cartItems && cartItems.length > 0) { 
+                Object.entries(cartItems).forEach(([a, b], i) => {
+                    let item = produtos[a]
+                    if (b > 0) {
+                        let itemElement = document.createElement("div");
+                        itemElement.classList.add("cart-item");
+                        itemElement.innerHTML = `
+                            <img src="${item.image}" alt="${item.description}">
+                            <div class="item-details">
+                            <p>${item.name}</p>
+                            <p>R$ ${item.price}</p>
+                            </div>
+                            <div class="item-quantity">
+                            <span>${b}</span>
+                            </div>
+                        `;
+                        cartItemsContainer.appendChild(itemElement);
+                    }
+                })
+            } else { 
+                cartItemsContainer.innerHTML = "<p>Nenhum pedido realizado</p>";
+            }
         })
     </script>
 </head>
