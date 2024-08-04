@@ -4,7 +4,7 @@
 </main>
 <div>
     
-    <% if (!orders || orders && Object.entries(orders).lenght === 0) {  %>
+    <% if (orders || orders && Object.entries(orders).length > 0) {  %>
         <% let entries = Object.entries(orders) %>
         <% entries.map(([a, b], i)=> { %>
             <div class="orderslist"> 
