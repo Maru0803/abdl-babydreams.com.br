@@ -2,8 +2,6 @@ const path = require("path")
 var session = require('express-session');
 const MemoryStore = require('memorystore')(session)
 
-
-
 function InitApp(app, express) {
     app.use(express.json());
     app.use(session({
