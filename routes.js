@@ -1,5 +1,5 @@
 const path = require("path")
-const session = require("express-session")
+var session = require('cookie-session');
 
 function InitApp(app, express) {
     app.use(express.json());
@@ -7,8 +7,6 @@ function InitApp(app, express) {
         secret: 'random',
         cookie: {
             maxAge: 60000 * 60 * 24,
-            sameSite: 'none',
-            secure: true,
         },
         saveUninitialized: false,
         resave: false,
