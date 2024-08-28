@@ -8,13 +8,12 @@ function InitApp(app, express) {
     app.use(express.json());
     app.use(session({
         secret: 'random',
+        cookie: {
+            maxAge: 60000 * 60 * 24
+        },
         store: new MemoryStore({
             checkPeriod: 86400000 
         }),
-        cookie: {
-            maxAge: 60000 * 60 * 24,
-            secure: true,
-        },
         saveUninitialized: false,
         resave: false,
         name: 'Baby Dreams Store',
