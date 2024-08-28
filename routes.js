@@ -6,7 +6,9 @@ function InitApp(app, express) {
     app.use(session({
         secret: 'random',
         cookie: {
-            maxAge: 60000 * 60 * 24
+            maxAge: 60000 * 60 * 24,
+            sameSite: 'none',
+            secure: true,
         },
         saveUninitialized: false,
         resave: false,
