@@ -3,13 +3,20 @@ var session = require('cookie-session');
 
 function InitApp(app, express) {
     app.use(express.json());
-    app.use(session({
+   /* app.use(session({
         secret: 'random',
         cookie: {
             maxAge: 60000 * 60 * 24,
         },
         saveUninitialized: false,
         resave: false,
+        name: 'Baby Dreams Store',
+    }));*/
+    app.use(session({
+        secret: 'random',
+        maxAge: 60000 * 60 * 24,
+        secure: true,
+        sameSit: "none",
         name: 'Baby Dreams Store',
     }));
     
