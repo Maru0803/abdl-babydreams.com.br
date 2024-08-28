@@ -1,10 +1,16 @@
 const path = require("path")
 var session = require('express-session');
+const MemoryStore = require('memorystore')(session)
+
+
 
 function InitApp(app, express) {
     app.use(express.json());
     app.use(session({
         secret: 'random',
+        store: new MemoryStore({
+            checkPeriod: 86400000 
+        }),
         cookie: {
             maxAge: 60000 * 60 * 24,
             secure: true,
