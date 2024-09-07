@@ -5,6 +5,23 @@
     <%- include('config/styles') -%>
     <script src="/scripts/background.js"></script>
     <script src="/scripts/scripts.js" defer></script>
+    <script defer>
+        var menuside = false;
+        var sidebar = false;
+        function openMenu() {
+            if (menuside === false) {
+                document.getElementById("menuSidebar").style.width = "400px";
+                menuside = true
+                if(sidebar) {
+                    sidebar = false
+                    document.getElementById("cartSidebar").style.width = "0";
+                }
+            } else {
+                document.getElementById("menuSidebar").style.width = "0";
+                menuside = false
+            }
+        }
+    </script>
 </head>
 <body>
     <%- include('static/menu', { loged }) -%>
