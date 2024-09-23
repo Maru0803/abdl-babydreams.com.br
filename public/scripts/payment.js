@@ -93,7 +93,7 @@ function display() {
                     let itemElement = document.createElement("div");
                     itemElement.classList.add("cart-item");
                     itemElement.innerHTML = `
-                            <img src="${item.image}" alt="${item.description}">
+                            <img src="${item.image[0]}" alt="${item.description}">
                             <div class="item-details">
                             <p>${item.name}</p>
                             <p>R$ ${item.price}</p>
