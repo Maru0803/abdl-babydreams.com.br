@@ -203,3 +203,25 @@ header {
     }
     
 }
+
+.navdiv {
+    position: relative;
+}
+
+.imgdiv {
+   overflow: hidden;
+   display: flex;
+   cursor: grab;
+   scroll-snap-type: x mandatory;
+}
+.imggrid { 
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+.radiodiv {
+    width: 100%; 
+    display: flex;
+    position: relative; 
+    justify-content: center; 
+}
