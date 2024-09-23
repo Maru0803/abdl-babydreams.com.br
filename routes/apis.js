@@ -172,7 +172,7 @@ router.get('/getdataorder', isAuthorized, async (req, res) => {
     }
 });
 
-router.get("/sendstatus", async (req, res) => {
+router.get("/sendstatus", isAuthorized, async (req, res) => {
     try { 
         var rastreio = req.query.rastreio
         var status = req.query.status
