@@ -31,16 +31,6 @@ function InitApp(app, express) {
             res.status(200).send('Acesso Negado');
         }
     });
-
-    app.use((req, res, next) => {
-        if(req.path === "/dev/orders/dashboard") {
-            if(req.user?.sub === process.env.ID) {
-                next()
-            } else {
-                res.status(200).send('Acesso Negado');
-            }
-        }
-   });
 }
 
 function InitRoutes(app) {
