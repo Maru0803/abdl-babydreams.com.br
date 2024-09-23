@@ -1,0 +1,125 @@
+<main></main>
+    <p class="centertext"> Bem vindos(as) a Baby Dreams Store, aqui você encontra os melhores produtos ABDL a pronta
+      entrega do Brasil!</p>
+</main>
+<div id="errorModal" class="modal">
+    <div class="modal-content">
+        <img src="https://i.imgur.com/Hvkz6wo.png" alt="banner de alerta de erro na finalizacao da compra">
+    </div>
+</div>
+<div>
+    <div class="orderslist"> 
+        <div class="textsorder"> 
+            <div class="ordertext"><p> Dados do pedido:</p></div>
+            <div class="ordertext"><p> ID do pedido: <%= order %> </p></div>
+            <div class="ordertext"><p> Valor pago: <%= info.total %> </p></div>
+            <div class="ordertext"><p> Frete: <%= info.value  %> - <%= info.type %> </p></div>
+            <div class="ordertext"><p> Desconto: <%= `-${(!info.desconto  || [0, "null"].includes(info.desconto) ? 0.00 : info.desconto) + ".00"} - ${info.cupom === "null" || !info.cupom ? "Nenhum cupom utilizado" : "Cupom utilizado: "+info.cupom}` %> </p></div>
+            <div class="ordertext btns-section">
+                <button id="btnstatus" data-info='{"status": 1, "id": "<%= order%>"}' >Preparando</button>
+                <button id="btnstatus" data-info='{"status": 2, "id": "<%= order%>"}' >Pedido Pronto</button>
+                <button id="btnstatus"data-info='{"status": 4, "id": "<%= order%>"}'>Concluir</button>
+                <button id="btnstatus"data-info='{"status": 5, "id": "<%= order%>"}'">Cancelar</button>
+                <br>
+                <div class="rastreio">
+                    <input id="rastreiocod" type="text" placeholder="Rastreio">
+                    <button id="btnstatus" data-info='{"status": 3, "id": "<%= order%>"}'">Enviado</button>
+                </div>
+            </div>
+            <br> 
+            <div class="ordertext"><p> Dados de entrega:</p></div>
+            <div class="ordertext"><p> <%= info.nome %> - <%= info.cpf %></p></div>
+            <div class="ordertext"><p> <%= info.rua %>, <%= info.numero %> </p></div>
+            <div class="ordertext"><p> <%= info.bairro %> <%= info.cidade %>-<%= info.estado %> </p></div>
+            <% if(info.complemento && info.complemento !== "null") { %> 
+                <div class="ordertext"><p><%= info.complemento %></p></div>
+            <% } %>  
+            <br>
+            <div class="ordertext"><p> Itens comprados:</p></div>
+            <div id="cartItems"></div>
+        </div>
+    </div> 
+</div>
+
+<script> 
+    var touchEvent = 'ontouchstart' in window ? 'ontouchstart' : 'onclick';
+
+    const btns = document.querySelectorAll('.btns-section button');
+        btns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                let datainfo = JSON.parse(btn.getAttribute('data-info'));
+                sendStatus(datainfo.id, datainfo.status, )
+        })
+    })
+
+    function sendStatus(orderID, status) {
+        const input = document.getElementById('rastreiocod');
+        if(status === 3 && !verify(input.value)) {
+            let modal = document.getElementById("errorModal");//ATUALZAR MODAL
+            modal.style.display = "block";
+            window[touchEvent] = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            return;
+        }
+        var id = '<%= info.userid %>'
+        var query = status === 3 ? `id=${id}&order=${orderID}&status=${status}&rastreio=${input.value}` : `id=${id}&order=${orderID}&status=${status}`
+        console.log(query)
+        fetch(`/apis/sendstatus?${query}`, {
+            method: 'GET',
+        }).then(response => {
+            return response.json();
+        }).then(async data => {
+            let modal = document.getElementById("errorModal");//ATUALZAR MODAL
+            modal.style.display = "block";
+            window[touchEvent] = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        })
+        .catch(error => {
+            console.log("[DEV PAGE]", error);
+            let modal = document.getElementById("errorModal");//ATUALZAR MODAL
+            modal.style.display = "block";
+            window[touchEvent] = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        });  
+    }
+
+    function verify(palavra) {
+        if (palavra.length < 4) return false;
+        const regex = /^[A-Za-z]{2}$/;
+        return regex.test(palavra.slice(0, 2)) && regex.test(palavra.slice(-2));
+    }
+</script>
+
+<style> 
+
+.btns-section input {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.btns-section button {
+    padding: 5px;
+    margin: 5px;
+    background-color: #e8bfe8;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+.btns-section button:hover {
+    background-color: #a26dbf;
+    color: white;
+}
+
+</style>
