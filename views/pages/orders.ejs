@@ -3,7 +3,6 @@
       entrega do Brasil!</p>
 </main>
 <div>
-    
     <% if (orders || orders && Object.entries(orders).length > 0) {  %>
         <% let entries = Object.entries(orders) %>
         <% entries.map(([a, b], i)=> { %>
@@ -12,14 +11,14 @@
                     <div class="ordertext"><p> Dados do pedido:</p></div>
                     <div class="ordertext"><p> ID do pedido: <%= a %> </p> </div>
                     <div class="ordertext"><p> Valor pago: <%= b.total %> </p> </div>
-                    <div class="ordertext"><p> status de envio: <%= !b.status || b.status === "null" ? "Aguardando envio" : `Enviado  - Rastreio ${b.rastreio}` %> </p> </div>
+                    <div class="ordertext"><p> status de envio: <%= !b.status ? "Preparando" : `${b.status}` %> </p> </div>
                 </div>
                 <div class="orderbtn">
                     <a href="orders/<%= a %>" class="btninfo">Mais detalhes</a>
                 </div>
             </div> 
             <br>
-        <% }) %> 
+        <% }) %>
     <% }  else { %>
         <p> Nenhum pedido realizado!</p>
     <% } %>
