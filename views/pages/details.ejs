@@ -1,12 +1,59 @@
 <div class="produtos-grid">
-    <a href="<%= data.name %>" class="produto">
-        <img src="<%= data.image %>" alt="<%= data.description %>">
+    <div class="produto">
+        <div class="imgdiv" id="imgdiv">
+            <% data.image.map((img, i)=> { %>
+                <img class="<%= `imggrid imggrid${i}`%>" src="<%= img %>" alt="<%= data.description %>">
+            <% }) %>
+        </div>
+        <div class="radiodiv">
+            <% data.image.map((img, i)=> { %>
+                <input class="<%= `radiogrid radiogrid${i}`%>" type="radio" name="pagination" <%= `${i === 0 ? "checked" : ""}` %> onclick="showImage(<%= i %>, <%= data.image.length %>)" >
+            <% }) %>
+        </div>
         <h3 id="informations" data-info='{"nome": "<%= data.name %>", "preco": "<%= data.price %>"}'>
         </h3><%= data.names[0] %></h3>
         <h4>Preço R$<%= data.price %></h4>
         <p><%= data.size %></p>
-        <p><%= data.description %></p>
         <p><%= data.count[0] %></p>
         <button class="add-to-cart">Adicionar ao Carrinho</button>
-    </a>
+    </div>
 </div>
+    <% data.description.map(x => { %>
+        <p> - <%= x %> </p>
+    <% }) %>
+    
+<script> 
+    const imgContainer = document.getElementById('imgdiv');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    function showImage(i, t) {
+        imgContainer.scrollLeft = imgContainer.scrollWidth / t * i
+    }
+
+    imgContainer.addEventListener('mousedown', (e) => {
+        isDown = true;
+        imgContainer.classList.add('active');
+        startX = e.pageX - imgContainer.offsetLeft;
+        scrollLeft = imgContainer.scrollLeft;
+    });
+    
+    imgContainer.addEventListener('mouseleave', () => {
+        isDown = false;
+        imgContainer.classList.remove('active');
+    });
+    
+    imgContainer.addEventListener('mouseup', () => {
+        isDown = false;
+        imgContainer.classList.remove('active');
+    });
+    
+    imgContainer.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - imgContainer.offsetLeft;
+        const walk = (x - startX) * 1;
+        imgContainer.scrollLeft = scrollLeft - walk;
+    })
+</script>
