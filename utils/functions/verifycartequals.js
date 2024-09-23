@@ -2,7 +2,9 @@ const database = require("./database.js");
 const produtos = [ 
     "babyusagi", "chupeta1", "chupeta2",
     "chupeta3", "fantasma", "huggies", "junior", 
-    "pastelpuffies", "ups", "animais"
+    "pastelpuffies", "ups", "animais",
+    "huggies2", "junior2", "ups2", "goodnites2",
+    "goodnites", "littleking", "bunnyhopps"
 ]
 
 async function verifyCartEquals (user, cart) {
