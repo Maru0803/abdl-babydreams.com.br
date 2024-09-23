@@ -170,7 +170,7 @@ async function displayCartItems() {
             let itemElement = document.createElement("div");
             itemElement.classList.add("cart-item");
             itemElement.innerHTML = `
-                <img src="${item.image}" alt="${item.description}">
+                <img src="${item.image[0]}" alt="${item.description}">
                 <div class="item-details">
                     <p>${item.names[0]}</p>
                     <p>R$ ${item.price} - ${item.count[0]}</p>
