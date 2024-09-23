@@ -1,5 +1,5 @@
 const path = require("path")
-var session = require('express-session');
+const session = require("express-session")
 const MemoryStore = require('memorystore')(session)
 
 function InitApp(app, express) {
@@ -7,7 +7,9 @@ function InitApp(app, express) {
     app.use(session({
         secret: 'random',
         cookie: {
-            maxAge: 60000 * 60 * 24
+            maxAge: 60000 * 60 * 24,
+            secure: true,
+            sameSite: "none"
         },
         store: new MemoryStore({
             checkPeriod: 86400000 
@@ -23,12 +25,22 @@ function InitApp(app, express) {
 
     app.use((req, res, next) => {
         const origin = req.get('host');
-        if (origin === 'www.abdl-babydreams.com.br') {
+        if (origin === 'localhost:3000') {
             next();
         } else {
             res.status(200).send('Acesso Negado');
         }
     });
+
+    app.use((req, res, next) => {
+        if(req.path === "/dev/orders/dashboard") {
+            if(req.user?.sub === process.env.ID) {
+                next()
+            } else {
+                res.status(200).send('Acesso Negado');
+            }
+        }
+   });
 }
 
 function InitRoutes(app) {
@@ -40,6 +52,7 @@ function InitRoutes(app) {
     const apisRoute = require('./routes/apis');
     const PrivacityRoute = require('./routes/privacity');
     const ordersRoute = require('./routes/orders');
+    const dashRoute = require('./routes/dev');
 
     app.use('/auth', authRoute)
     app.use('/info', infoRoute)
@@ -49,7 +62,7 @@ function InitRoutes(app) {
     app.use('/apis', apisRoute)
     app.use('/privacity', PrivacityRoute)
     app.use('/orders', ordersRoute)
-
+    app.use('/dev/orders/dashboard', dashRoute)
     app.get("*", (req, res) => {
         res.redirect("/")
     });
