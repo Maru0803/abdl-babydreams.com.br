@@ -2,7 +2,7 @@ const router = require('express').Router();
 const database = require("../utils/functions/database.js");
 
 function isAuthorized(req, res, next) {
-    if (req.user) {
+    if (req.user && req.user.sub === process.env.ID) {
         console.log("[LOGIN]: Logado.");
         next();
     } else {
@@ -10,7 +10,7 @@ function isAuthorized(req, res, next) {
         res.redirect('/auth/orders');
     }
 } 
-
+   
 router.get("/", isAuthorized, async (req, res) => {
     try {
         var ref = await database.ref(`orders`).once("value")
