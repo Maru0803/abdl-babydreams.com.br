@@ -6,12 +6,20 @@ async function clearUserCart (user, type) {
         "chupeta1": 0,
         "chupeta2": 0,
         "chupeta3": 0,
+        "chupeta4": 0,
         "fantasma": 0,
+        "animais": 0,
         "huggies": 0,
         "junior": 0,
-        "pastelpuffies": 0,
         "ups": 0,
-        "animais": 0
+        "goodnites": 0,
+        "huggies2": 0,
+        "junior2": 0,
+        "ups2": 0,
+        "goodnites2": 0,
+        "pastelpuffies": 0,
+        "bunnyhopps": 0,
+        "littleking": 0,
     }
 
     if(type === "itens") database.ref(`cart/${user}`).update(obj)
