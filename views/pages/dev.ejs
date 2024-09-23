@@ -1,0 +1,24 @@
+<main></main>
+    <p class="centertext"> Bem vindos(as) a Baby Dreams Store, aqui você encontra os melhores produtos ABDL a pronta
+      entrega do Brasil!</p>
+</main>
+<div>
+    <% if (dataorders || dataorders && Object.entries(dataorders).length > 0) {  %>
+        <% let entries = Object.entries(dataorders) %>
+            <% entries.filter(([a, x]) => x.status !== "concluido").map(([a, b], i)=> { %>
+                <div class="orderslist"> 
+                    <div class="textsorder"> 
+                        <div class="ordertext"><p> Dados do pedido:</p></div>
+                        <div class="ordertext"><p> ID do pedido: <%= a %> </p> </div>
+                        <div class="ordertext"><p> Valor pago: <%= b.total %> </p> </div>
+                    </div>
+                    <div class="orderbtn">
+                        <a href="dashboard/<%= a %>" class="btninfo">Editar pedido</a>
+                    </div>
+                </div> 
+            <br>
+        <% }) %>
+    <% }  else { %>
+        <p> Nenhum pedido em andamento!</p>
+    <% } %>
+</div>
