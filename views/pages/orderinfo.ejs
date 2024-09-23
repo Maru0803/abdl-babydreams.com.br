@@ -10,7 +10,9 @@
             <div class="ordertext"><p> Valor pago: <%= info.total %> </p></div>
             <div class="ordertext"><p> Frete: <%= info.value  %> - <%= info.type %> </p></div>
             <div class="ordertext"><p> Desconto: <%= `-${(!info.desconto  || [0, "null"].includes(info.desconto) ? 0.00 : info.desconto) + ".00"} - ${info.cupom === "null" || !info.cupom ? "Nenhum cupom utilizado" : "Cupom utilizado: "+info.cupom}` %> </p></div>
-            <div class="ordertext"><p> status de envio: <%= !info.status || info.status === "null" ? "Aguardando envio" : `Enviado  - Rastreio ${info.rastreio}` %> </p></div>
+            <div class="ordertext"><p> Status de envio: <%= !info.status ? "Preparando" : `${info.status}` %> </p></div>
+            <div class="ordertext"><p> Rastreio: <%= !info.rastreio ? "Codigo de Rastreio indisponivel" : `Codido de rastreio: ${info.rastreio}`} %> </p></div>
+            <div class="ordertext"><p> Obs: <%= info.message %> </p></div>
             <br> 
             <div class="ordertext"><p> Dados de entrega:</p></div>
             <div class="ordertext"><p> <%= info.nome %> - <%= info.cpf %></p></div>
