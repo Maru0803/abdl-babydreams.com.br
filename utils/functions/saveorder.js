@@ -6,8 +6,11 @@ async function saveOrder(req, res, id) {
         var list = [ 
             "babyusagi", "chupeta1", "chupeta2",
             "chupeta3", "fantasma", "huggies", "junior", 
-            "pastelpuffies", "ups", "animais"
-        ]
+            "pastelpuffies", "ups", "animais",
+            "huggies2", "junior2", "ups2", "goodnites2",
+            "goodnites", "littleking", "bunnyhopps"
+        ];
+        
         var cart = await database.ref(`cart/${req.user.sub}`).once("value")
         var cartItems = {}
         var stock = await database.ref(`stock`).once("value")
@@ -24,8 +27,10 @@ async function saveOrder(req, res, id) {
             if(list.val() === null) database.ref(`useds/${req.user.sub}`).set({ [cart.val().cupom]: true})
             else database.ref(`useds/${req.user.sub}`).update({ [cart.val().cupom]: true})
         }
-        database.ref(`userorders/${req.user.sub}/${numOrder.val().num}`).set({...cart.val(), orderid: id })
-        database.ref(`orders/${numOrder.val().num}`).set({...cart.val(), userid: req.user.sub, orderid: id })
+
+        var obj = {...cart.val(), userid: req.user.sub, orderid: id, rastreio: false, status: "preparando", message: "aguardando envio do produto"}
+        database.ref(`userorders/${req.user.sub}/${numOrder.val().num}`).set(obj)
+        database.ref(`orders/${numOrder.val().num}`).set(obj)
         database.ref(`num`).set({ num: numOrder.val().num + 1 })
         clearUserCart(req.user.sub, "total")
         return res.json({ status: "success", cart: cartItems, info: {...cart.val(), orderid: numOrder.val().num }})
