@@ -2,7 +2,10 @@
     "fantasma": {
         "name": "fantasma",
         "category": "bodys",
-        "image": "https://i.imgur.com/evyagDl.png",
+        "image": [
+            "https://i.imgur.com/evyagDl.png",
+            "https://i.imgur.com/UASxHmZ.png"
+        ],
         "names": [
             "Body Fantasma",
             "Bodysuit Fantasma",
@@ -10,10 +13,16 @@
             "Body",
             "Fantasma"
         ],
-        "price": 90,
-        "description": "Bodysuit ABDL com estampa fofa de fantasma, comprimento: 76, busto 86, cintura 75 ",
+        "price": 100,
+        "description": [
+            "Sobre o produto:",
+            "Bodysuit Adulto ABDL com estampa fofa de fantasma",
+            "Tamanho S comprimento: 74, busto 82, cintura 70",
+            "Anúncio referente a 1 Peça!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
         "size": [
-            "Tamanho S/M"
+            "Tamanho S"
         ],
         "count": [
             "1 Peça"
@@ -28,7 +37,10 @@
     "animais": {
         "name": "animais",
         "category": "bodys",
-        "image": "https://i.imgur.com/Shhkxbg.png",
+        "image": [
+            "https://i.imgur.com/Shhkxbg.png",
+            "https://i.imgur.com/Zq1UE8h.png"
+        ],
         "names": [
             "Body animais",
             "Bodysuit animais",
@@ -36,10 +48,16 @@
             "Body",
             "animais"
         ],
-        "price": 90,
-        "description": "Bodysuit ABDL com estampa fofa de animais",
+        "price": 100,
+        "description": [
+            "Sobre o produto:",
+            "Bodysuit Adulto ABDL com estampa fofa de fantasma",
+            "Tamanho L comprimento: 75, busto 94, cintura 94",
+            "Anúncio referente a 1 Peça!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
         "size": [
-            "Tamanho M/G"
+            "Tamanho L"
         ],
         "count": [
             "1 Peça"
@@ -51,24 +69,79 @@
             "peso": 0.1
         }
     },
+
+
+
+
+    
+    "goodnites": {
+        "name": "goodnites",
+        "category": "fraldas",
+        "image": [
+            "https://i.imgur.com/NsE0AoV.jpeg",
+            "https://i.imgur.com/zUs8LhM.png"
+        ],
+        "names": [
+            "Fralda Goodnites",
+            "Goodnites M",
+            "Goodnites Coreana",
+            "Goodnites",
+            "Fralda",
+            "Pull ups",
+            "Pull-ups"
+        ],
+        "price": 75,
+        "description":  [
+            "Sobre o produto:",
+            "Fralda Juvenil Goodnites Coreana",
+            "Tamanho M 30KG - laterais em velcro",
+            "Anúncio referente a 5 unidades!",
+            "Importada da Coreia",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
+        "size": [
+            "Tamanho M"
+        ],
+        "count": [
+            "5 Unidades"
+        ],
+        "info": {
+            "largura": 24,
+            "altura": 3,
+            "comprimento": 19,
+            "peso": 0.2
+        }
+    },
     "junior": {
         "name": "junior",
         "category": "fraldas",
-        "image": "https://i.imgur.com/HCCVjgC.png",
+        "image": [
+            "https://i.imgur.com/HCCVjgC.png",
+            "https://i.imgur.com/XinIw7E.jpeg",
+            "https://i.imgur.com/110Bnrg.png"
+        ],
         "names": [
+            "Fralda Mamypoko",
             "Mamypoko Junior XXXL",
             "Mamypoko XXXL",
             "Mamypoko",
             "Fralda XXXL",
             "Fralda"
         ],
-        "price": 75,
-        "description": "Mamypoko Junior XXXL importada da indonesia",
+        "price": 60,
+        "description":  [
+            "Sobre o produto:",
+            "Fralda Infantil Mamypoko Junior Night Pants",
+            "Tamanho XXXL fralda calcinha",
+            "Anúncio referente a 5 unidades!",
+            "Importada da indonesia",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
         "size": [
-            "Tamanho XXXL 25kg-35kg"
+            "Tamanho XXXL"
         ],
         "count": [
-            "5 Unidade avulsa"
+            "5 Unidades"
         ],
         "info": {
             "largura": 24,
@@ -80,8 +153,13 @@
     "ups": {
         "name": "ups",
         "category": "fraldas",
-        "image": "https://i.imgur.com/qUOyxEA.png",
+        "image": [
+            "https://i.imgur.com/qUOyxEA.png",
+            "https://i.imgur.com/AkjAKmE.png",
+            "https://i.imgur.com/v2fRmeq.jpeg"
+        ],
         "names": [
+            "Fralda Ups & Ups",
             "Ups & Ups 4T-5T",
             "Ups&Ups 4T-5T",
             "Ups&Ups",
@@ -93,13 +171,20 @@
             "Fralda 4T-5T",
             "Fralda"
         ],
-        "price": 75,
-        "description": "Ups & Ups 4T-5T Laterais em velcro, semelhante a Huggies Pull ups, fralda importa dos EUA",
+        "price": 60,
+        "description":  [
+            "Sobre o produto:",
+            "Fralda Infantil Ups & Ups",
+            "Tamanho 4T-5T com laterais em velcro",
+            "Anúncio referente a 5 unidades!",
+            "Importada dos estados unidos",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
         "size": [
-            "Tamanho 4T-5T 18kg-25kg"
+            "Tamanho 4T-5T"
         ],
         "count": [
-            "5 Unidade avulsa"
+            "5 Unidades"
         ],
         "info": {
             "largura": 24,
@@ -111,8 +196,13 @@
     "huggies": {
         "name": "huggie1",
         "category": "fraldas",
-        "image": "https://i.imgur.com/DuaW1cm.png",
+        "image": [
+            "https://i.imgur.com/DuaW1cm.png",
+            "https://i.imgur.com/jRTEKUA.png",
+            "https://i.imgur.com/evx8Px5.jpeg"
+        ],
         "names": [
+            "Fralda Huggies",
             "Huggies 4T-5T",
             "Huggies Pull ups",
             "Huggies",
@@ -122,13 +212,20 @@
             "Fralda 4T-5T",
             "Fralda"
         ],
-        "price": 75,
-        "description": "Huggies Pull Ups 4T-5T Laterais em velcro, fralda importa dos EUA",
+        "price": 60,
+        "description":  [
+            "Sobre o produto:",
+            "Fralda Infantil Huggies Pull Ups",
+            "Tamanho 4T-5T com laterais em velcro",
+            "Anúncio referente a 5 unidades!",
+            "Importada dos estados unidos",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
         "size": [
-            "Tamanho 4T-5T 18kg-25kg"
+            "Tamanho 4T-5T"
         ],
         "count": [
-            "5 Unidade avulsa"
+            "5 Unidades"
         ],
         "info": {
             "largura": 24,
@@ -137,10 +234,180 @@
             "peso": 0.2
         }
     },
+    "goodnites2": {
+        "name": "goodnites",
+        "category": "fraldas",
+        "image": [
+            "https://i.imgur.com/NsE0AoV.jpeg",
+            "https://i.imgur.com/zUs8LhM.png"
+        ],
+        "names": [
+            "Fralda Goodnites",
+            "Goodnites M",
+            "Goodnites Coreana",
+            "Goodnites",
+            "Fralda",
+            "Pull ups",
+            "Pull-ups"
+        ],
+        "price": 55,
+        "description":  [
+            "Sobre o produto:",
+            "Fralda Juvenil Goodnites Coreana",
+            "Tamanho M 30KG - laterais em velcro",
+            "Anúncio referente a 3 unidades!",
+            "Importada da Coreia",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
+        "size": [
+            "Tamanho M"
+        ],
+        "count": [
+            "3 Unidades"
+        ],
+        "info": {
+            "largura": 24,
+            "altura": 3,
+            "comprimento": 19,
+            "peso": 0.2
+        }
+    },
+    "junior2": {
+        "name": "junior",
+        "category": "fraldas",
+        "image": [
+            "https://i.imgur.com/HCCVjgC.png",
+            "https://i.imgur.com/XinIw7E.jpeg",
+            "https://i.imgur.com/110Bnrg.png"
+        ],
+        "names": [
+            "Fralda Mamypoko",
+            "Mamypoko Junior XXXL",
+            "Mamypoko XXXL",
+            "Mamypoko",
+            "Fralda XXXL",
+            "Fralda"
+        ],
+        "price": 45,
+        "description":  [
+            "Sobre o produto:",
+            "Fralda Infantil Mamypoko Junior Night Pants",
+            "Tamanho XXXL fralda calcinha",
+            "Anúncio referente a 3 unidades!",
+            "Importada da indonesia",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
+        "size": [
+            "Tamanho XXXL"
+        ],
+        "count": [
+            "3 Unidades"
+        ],
+        "info": {
+            "largura": 24,
+            "altura": 3,
+            "comprimento": 19,
+            "peso": 0.2
+        }
+    },
+    "ups2": {
+        "name": "ups",
+        "category": "fraldas",
+        "image": [
+            "https://i.imgur.com/qUOyxEA.png",
+            "https://i.imgur.com/AkjAKmE.png",
+            "https://i.imgur.com/v2fRmeq.jpeg"
+        ],
+        "names": [
+            "Fralda Ups & Ups",
+            "Ups & Ups 4T-5T",
+            "Ups&Ups 4T-5T",
+            "Ups&Ups",
+            "Ups & Ups",
+            "UpsUps",
+            "Ups Ups",
+            "Pull ups",
+            "Pull-ups",
+            "Fralda 4T-5T",
+            "Fralda"
+        ],
+        "price": 45,
+        "description":  [
+            "Sobre o produto:",
+            "Fralda Infantil Ups & Ups",
+            "Tamanho 4T-5T com laterais em velcro",
+            "Anúncio referente a 3 unidades!",
+            "Importada dos estados unidos",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
+        "size": [
+            "Tamanho 4T-5T"
+        ],
+        "count": [
+            "3 Unidades"
+        ],
+        "info": {
+            "largura": 24,
+            "altura": 3,
+            "comprimento": 19,
+            "peso": 0.2
+        }
+    },
+    "huggies2": {
+        "name": "huggie1",
+        "category": "fraldas",
+        "image": [
+            "https://i.imgur.com/DuaW1cm.png",
+            "https://i.imgur.com/jRTEKUA.png",
+            "https://i.imgur.com/evx8Px5.jpeg"
+        ],
+        "names": [
+            "Fralda Huggies",
+            "Huggies 4T-5T",
+            "Huggies Pull ups",
+            "Huggies",
+            "Huggies Pull-ups",
+            "Pull ups",
+            "Pull-ups",
+            "Fralda 4T-5T",
+            "Fralda"
+        ],
+        "price": 45,
+        "description":  [
+            "Sobre o produto:",
+            "Fralda Infantil Huggies Pull Ups",
+            "Tamanho 4T-5T com laterais em velcro",
+            "Anúncio referente a 3 unidades!",
+            "Importada dos estados unidos",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
+        "size": [
+            "Tamanho 4T-5T"
+        ],
+        "count": [
+            "3 Unidades"
+        ],
+        "info": {
+            "largura": 24,
+            "altura": 3,
+            "comprimento": 19,
+            "peso": 0.2
+        }
+    },
+
+
+
+
+
     "babyusagi": {
         "name": "babyusagi",
         "category": "fraldas",
-        "image": "https://i.imgur.com/zYqMKNk.png",
+        "image": [
+            "https://i.imgur.com/zYqMKNk.png",
+            "https://i.imgur.com/oHXtl4C.png",
+            "https://i.imgur.com/6JwcUhg.png",
+            "https://i.imgur.com/GKRPuOW.png"
+        ],
         "names": [
             "Fralda Baby Usagi",
             "Baby usagi",
@@ -153,12 +420,18 @@
             "Fralda"
         ],
         "price": 80,
-        "description": "Fralda ABDL Baby Usagi LittleForBig tamanho M avulsa",
+        "description":  [
+            "Sobre o produto:",
+            "Fralda ABDL Baby Usagi LittleForBig",
+            "Tamanho M - 71cm a 96cm",
+            "Anúncio referente a 1 unidade!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
         "size": [
             "Tamanho M"
         ],
         "count": [
-            "1 Unidade avulsa"
+            "1 Unidade"
         ],
         "info": {
             "largura": 24,
@@ -170,24 +443,34 @@
     "pastelpuffies": {
         "name": "pastelpuffies",
         "category": "fraldas",
-        "image": "https://i.imgur.com/Nn589A9.png",
+        "image": [
+            "https://i.imgur.com/Nn589A9.png",
+            "https://i.imgur.com/OiRQX2t.jpeg",
+            "https://i.imgur.com/uqm6GaV.jpeg",
+            "https://i.imgur.com/9PoOEw3.png"
+        ],
         "names": [
             "Fralda Pastel Puffies",
             "Pastel Puffies",
             "Fralda Omutopia",
             "Omutopia",
             "Fralda ABDL Pastel Puffies",
-            "ABDL",
             "Fralda ABDL",
             "Fralda"
         ],
         "price": 80,
-        "description": "Fralda ABDL Pastel Puffies Omutopia tamanho M avulsa",
+        "description":  [
+            "Sobre o produto:",
+            "Fralda ABDL Pastel Puffies Omutopia",
+            "Tamanho M - 71cm a 101cm",
+            "Anúncio referente a 1 unidade!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
         "size": [
             "Tamanho M"
         ],
         "count": [
-            "1 Unidade avulsa"
+            "1 Unidade"
         ],
         "info": {
             "largura": 24,
@@ -196,16 +479,109 @@
             "peso": 0.2
         }
     },
+    "littleking": {
+        "name": "littleking",
+        "category": "fraldas",
+        "image": [
+            "https://i.imgur.com/1jgnARX.png",
+            "https://i.imgur.com/BwrZN8X.png",
+            "https://i.imgur.com/Hq1FRyi.png"
+        ],
+        "names": [
+            "Fralda Little King",
+            "Little King",
+            "Fralda ABU",
+            "ABU",
+            "Fralda ABDL Little King",
+            "ABDL",
+            "Fralda ABDL",
+            "Fralda"
+        ],
+        "price": 100,
+        "description":  [
+            "Sobre o produto:",
+            "Fralda ABDL Little King ABU",
+            "Tamanho M - 78cm a 92cm",
+            "Anúncio referente a 1 unidade!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
+        "size": [
+            "Tamanho M"
+        ],
+        "count": [
+            "1 Unidade"
+        ],
+        "info": {
+            "largura": 24,
+            "altura": 3,
+            "comprimento": 19,
+            "peso": 0.2
+        }
+    },
+    "bunnyhopps": {
+        "name": "bunnyhopps",
+        "category": "fraldas",
+        "image": [
+            "https://i.imgur.com/UGEpcf4.png",
+            "https://i.imgur.com/KEGgb4C.png",
+            "https://i.imgur.com/Hq1FRyi.png"
+        ],
+        "names": [
+            "Fralda Bunny Hopps",
+            "Bunny Hopps",
+            "Fralda ABU",
+            "ABU",
+            "Fralda ABDL Bunny Hopps",
+            "ABDL",
+            "Fralda ABDL",
+            "Fralda"
+        ],
+        "price": 100,
+        "description":  [
+            "Sobre o produto:",
+            "Fralda ABDL Bunny Hopps ABU",
+            "Tamanho M - 78cm a 92cm",
+            "Anúncio referente a 1 unidade!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
+        "size": [
+            "Tamanho M"
+        ],
+        "count": [
+            "1 Unidade"
+        ],
+        "info": {
+            "largura": 24,
+            "altura": 3,
+            "comprimento": 19,
+            "peso": 0.2
+        }
+    },
+
+
+
+
+
     "chupeta1": {
         "name": "chupeta1",
         "category": "acessorios",
-        "image": "https://i.imgur.com/BckBH5p.png",
+        "image": [
+            "https://i.imgur.com/lkbvW3o.png",
+            "https://i.imgur.com/aktowha.jpeg",
+            "https://i.imgur.com/KeKSo3V.jpeg"
+        ],
         "names": [
-            "chupeta",
-            "branca"
+            "Chupeta Branca",
+            "Chupeta",
+            "Branca"
         ],
         "price": 50,
-        "description": "Chupeta ABDL Adulta lisa branca",
+        "description": [
+            "Sobre o produto:",
+            "Chupeta adulta tamanho 8",
+            "Anúncio referente a cor Branca!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
         "size": [
             "Tamanho 8"
         ],
@@ -222,13 +598,23 @@
     "chupeta2": {
         "name": "chupeta2",
         "category": "acessorios",
-        "image": "https://i.imgur.com/bhy3FlE.png",
+        "image": [
+            "https://i.imgur.com/DDfjXGA.png",
+            "https://i.imgur.com/aktowha.jpeg",
+            "https://i.imgur.com/KeKSo3V.jpeg"
+        ],
         "names": [
-            "chupeta",
-            "rosa"
+            "Chupeta Rosa",
+            "Chupeta",
+            "Rosa"
         ],
         "price": 50,
-        "description": "Chupeta ABDL Adulta lisa rosa",
+        "description": [
+            "Sobre o produto:",
+            "Chupeta adulta tamanho 8",
+            "Anúncio referente a cor Rosa!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
         "size": [
             "Tamanho 8"
         ],
@@ -245,13 +631,56 @@
     "chupeta3": {
         "name": "chupeta3",
         "category": "acessorios",
-        "image": "https://i.imgur.com/gYt7pZu.png",
+        "image": [
+            "https://i.imgur.com/8PvND9G.png",
+            "https://i.imgur.com/aktowha.jpeg",
+            "https://i.imgur.com/KeKSo3V.jpeg"
+        ],
         "names": [
-            "chupeta",
-            "preta"
+            "Chupeta Preta",
+            "Chupeta",
+            "Preta"
         ],
         "price": 50,
-        "description": "Chupeta ABDL Adulta lisa preta",
+        "description": [
+            "Sobre o produto:",
+            "Chupeta adulta tamanho 8",
+            "Anúncio referente a cor Preta!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
+        "size": [
+            "Tamanho 8"
+        ],
+        "count": [
+            "1 Unidade"
+        ],
+        "info": {
+            "largura": 8,
+            "altura": 0.5,
+            "comprimento": 8,
+            "peso": 0.1
+        }
+    },
+    "chupeta4": {
+        "name": "chupeta4",
+        "category": "acessorios",
+        "image": [
+            "https://i.imgur.com/IKq9GS6.jpeg",
+            "https://i.imgur.com/aktowha.jpeg",
+            "https://i.imgur.com/KeKSo3V.jpeg"
+        ],
+        "names": [
+            "Chupeta Azul",
+            "Chupeta",
+            "Azul"
+        ],
+        "price": 50,
+        "description": [
+            "Sobre o produto:",
+            "Chupeta adulta tamanho 8",
+            "Anúncio referente a cor Azul!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
         "size": [
             "Tamanho 8"
         ],
@@ -266,3 +695,4 @@
         }
     }
 }
+ 
