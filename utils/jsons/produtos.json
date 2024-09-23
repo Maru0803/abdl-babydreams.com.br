@@ -69,10 +69,6 @@
             "peso": 0.1
         }
     },
-
-
-
-
     
     "goodnites": {
         "name": "goodnites",
@@ -194,7 +190,7 @@
         }
     },
     "huggies": {
-        "name": "huggie1",
+        "name": "huggies",
         "category": "fraldas",
         "image": [
             "https://i.imgur.com/DuaW1cm.png",
@@ -235,7 +231,7 @@
         }
     },
     "goodnites2": {
-        "name": "goodnites",
+        "name": "goodnites2",
         "category": "fraldas",
         "image": [
             "https://i.imgur.com/NsE0AoV.jpeg",
@@ -273,7 +269,7 @@
         }
     },
     "junior2": {
-        "name": "junior",
+        "name": "junior2",
         "category": "fraldas",
         "image": [
             "https://i.imgur.com/HCCVjgC.png",
@@ -311,7 +307,7 @@
         }
     },
     "ups2": {
-        "name": "ups",
+        "name": "ups2",
         "category": "fraldas",
         "image": [
             "https://i.imgur.com/qUOyxEA.png",
@@ -354,7 +350,7 @@
         }
     },
     "huggies2": {
-        "name": "huggie1",
+        "name": "huggies2",
         "category": "fraldas",
         "image": [
             "https://i.imgur.com/DuaW1cm.png",
