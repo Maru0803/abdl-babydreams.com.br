@@ -7,13 +7,18 @@ const express = require("express")
 const path = require("path")
 const session = require("express-session")
 const app = express()
+const MemoryStore = require('memorystore')(session)
 
 app.use(express.json());
 app.use(session({
     secret: 'random',
-    cookie: {
-        maxAge: 60000 * 60 * 24,
+    cookie: { 
+        maxAge: 86400000,
+        secure: true
     },
+    store: new MemoryStore({
+      checkPeriod: 86400000 
+    }),
     saveUninitialized: false,
     resave: false,
     name: 'Baby Dreams Store',
@@ -27,7 +32,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use((req, res, next) => {
     const origin = req.get('host');
-    if (origin === 'www.abdl-babydreams.com.br') {
+    if (origin === 'localhost:3000') {
         next();
     } else {
         res.status(200).send('Acesso Negado');
