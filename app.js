@@ -14,7 +14,7 @@ app.use(session({
     secret: 'random',
     cookie: { 
         maxAge: 86400000,
-        secure: true
+        secure: false
     },
     store: new MemoryStore({
       checkPeriod: 86400000 
