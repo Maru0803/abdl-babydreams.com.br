@@ -1,15 +1,58 @@
 const produtos = require("./utils/jsons/produtos.json")
 const promove = require("./utils/jsons/promove.json")
 const database = require("./utils/functions/database.js");
-const { InitApp, InitRoutes } = require("./routes.js");
 require('./utils/functions/strategies.js');
 const passport = require("passport")
 const express = require("express")
+const path = require("path")
+const session = require("express-session")
 const app = express()
 
-InitApp(app, express);
+app.use(express.json());
+app.use(session({
+    secret: 'random',
+    cookie: {
+        maxAge: 60000 * 60 * 24,
+    },
+    saveUninitialized: false,
+    resave: false,
+    name: 'Baby Dreams Store',
+}));
+
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname + '/public')));
+
 app.use(passport.initialize());
 app.use(passport.session());
+app.use((req, res, next) => {
+    const origin = req.get('host');
+    if (origin === 'www.abdl-babydreams.com.br') {
+        next();
+    } else {
+        res.status(200).send('Acesso Negado');
+    }
+});
+
+const infoRoute = require('./routes/details');
+const authRoute = require('./routes/auth');
+const checkoutRoute = require('./routes/checkout');
+const produtosRoute = require('./routes/produtos');
+const payRoute = require('./routes/payment');
+const apisRoute = require('./routes/apis');
+const PrivacityRoute = require('./routes/privacity');
+const ordersRoute = require('./routes/orders');
+const dashRoute = require('./routes/dev');
+
+app.use('/auth', authRoute)
+app.use('/info', infoRoute)
+app.use('/checkout', checkoutRoute)
+app.use('/lister', produtosRoute)
+app.use('/payment', payRoute)
+app.use('/apis', apisRoute)
+app.use('/privacity', PrivacityRoute)
+app.use('/orders', ordersRoute)
+app.use('/dev/orders/dashboard', dashRoute)
 
 app.get('/', async (req, res) => {
     var ref = await database.ref("stock").once("value")
@@ -21,16 +64,14 @@ app.get('/', async (req, res) => {
         conteudo: promove
     })
 });
-
-InitRoutes(app);
-app.get('/sitemap.xml', async (req, res) => {    
-    res.sendFile(__dirname + '/public/sitemap.xml');
+app.get("*", (req, res) => {
+    res.redirect("/")
 });
 
-app.listen(8080, () => {
+app.listen(3000, () => {
     console.log('Online')
 });
 
-/*
-dashboard para atualizar status de pedidos
-*/
+
+
+
