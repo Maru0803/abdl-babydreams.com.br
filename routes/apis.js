@@ -91,7 +91,7 @@ router.get('/verifyshippingcart', async (req, res) => {
     verifyShipping(res, cep, data);
 });
 
-router.get('/verifytopayment', async (req, res) => {
+router.get('/verifytopayment', isAuthorized, async (req, res) => {
     try {
         var frete = JSON.parse(req.query.frete);
         var cupom = req.query.cupom;
