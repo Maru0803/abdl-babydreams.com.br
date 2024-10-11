@@ -7,7 +7,7 @@ async function verifyGift (req, res, gift) {
         if(list[gift]) {
             if(req.user) {
                 var user = await database.ref(`useds/${req.user.sub}`).once("value") 
-                var data = user.val()
+                var data = user.val() ?? { }
                 if(!data[gift] || data[gift] === null || data[gift] === false) return res.json({status: "valid", value: list[gift], message: "cupom aplicado com sucesso"})
                 else return res.json({ status: "used", message: "cupom ja utilizado"})
             } else {
