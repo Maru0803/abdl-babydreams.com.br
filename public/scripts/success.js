@@ -2,6 +2,22 @@ var touchEvent = 'ontouchstart' in window ? 'ontouchstart' : 'onclick';
 
 document.addEventListener('DOMContentLoaded', async () => {
     window.onload = function() {
+        function isInWebView() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            return /wv|WebView/i.test(userAgent);
+        }
+        
+        if (isInWebView()) {
+            console.log("webview")
+            window.open("https://www.abdl-babydreams.com.br/", '_system')
+        } else {
+            console.log("navegador normal")
+        }
+    };
+})
+
+document.addEventListener('DOMContentLoaded', async () => {
+    window.onload = function() {
         let url = window.location.toString();
         if (url.indexOf("?") > 0) {
             let clean_url = url.substring(0, url.indexOf("?"));
