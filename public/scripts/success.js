@@ -1,19 +1,17 @@
 var touchEvent = 'ontouchstart' in window ? 'ontouchstart' : 'onclick';
 
 document.addEventListener('DOMContentLoaded', async () => {
-    window.onload = function() {
-        function isInWebView() {
-            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            return /wv|WebView/i.test(userAgent);
-        }
+    function isInWebView() {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        return /wv|WebView/i.test(userAgent);
+    }
         
-        if (isInWebView()) {
-            console.log("webview")
-            window.open("https://www.abdl-babydreams.com.br/", '_system')
-        } else {
-            console.log("navegador normal")
-        }
-    };
+    if (isInWebView()) {
+        console.log("webview")
+        window.open("https://www.abdl-babydreams.com.br/", '_system')
+    } else {
+        console.log("navegador normal")
+    }
 })
 
 document.addEventListener('DOMContentLoaded', async () => {
