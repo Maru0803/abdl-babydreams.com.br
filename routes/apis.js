@@ -188,7 +188,7 @@ router.get("/sendstatus", isAuthorized, async (req, res) => {
         ]
         var types = ["preparando", "pronto para envio", "enviado", "concluido", "cancelado"]
         var user = await database.ref(`login/${id}`).once("value")
-        var obj = { message: messages[status-1], status: types[status-1] }
+        var obj = { message: messages[status-1], status: types[status-1], rastreio: rastreio }
 
         if(status === 3) obj.rastreio = rastreio;
         database.ref(`userorders/${id}/${order}`).update(obj)
