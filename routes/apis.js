@@ -190,7 +190,7 @@ router.get("/sendstatus", isAuthorized, async (req, res) => {
         var user = await database.ref(`login/${id}`).once("value")
         var obj = { message: messages[status-1], status: types[status-1] }
 
-        if(status === 3) obj["rastreio"] = rastreio;
+        if(obj.status === "enviado") obj["rastreio"] = rastreio;
         database.ref(`userorders/${id}/${order}`).update(obj)
         database.ref(`orders/${order}`).update(obj)
         try {
