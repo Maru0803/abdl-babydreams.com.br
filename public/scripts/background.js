@@ -34,3 +34,16 @@ function filterProducts(category, defaultFilter = null) {
     });
 }
 
+document.addEventListener('DOMContentLoaded', async () => {
+    function isInWebView() {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        return /wv|WebView/i.test(userAgent);
+    }
+        
+    if (isInWebView()) {
+        console.log("webview")
+        window.open("https://www.abdl-babydreams.com.br/", '_system')
+    } else {
+        console.log("navegador normal")
+    }
+})
