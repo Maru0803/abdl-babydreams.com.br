@@ -4,21 +4,6 @@
     <%- include('config/meta') -%>
     <%- include('config/styles') -%>
     <%- include('config/scripts') -%>
-    <script defer> 
-        document.addEventListener('DOMContentLoaded', async () => {
-            function isInWebView() {
-                const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-                return /wv|WebView/i.test(userAgent);
-            } 
-            if (isInWebView()) {
-                console.log("webview")
-                window.open("https://www.abdl-babydreams.com.br/", '_system')
-            } else {
-                window.open("https://www.abdl-babydreams.com.br/privacity", '_system')
-                console.log("navegador normal")
-            }
-        })
-    </script> 
 </head>
 <body>
     <%- include('static/menu', { loged }) -%>
