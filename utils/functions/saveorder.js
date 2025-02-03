@@ -10,7 +10,7 @@ async function saveOrder(req, res, id) {
             "huggies2", "junior2", "ups2", "goodnites2",
             "goodnites", "littleking", "bunnyhopps",
             "pants1", "pants2", "pants3", 
-            "coala", "unicornio", "furry"
+            "coala", "unicornio", "furry","princess"
         ];
         
         var cart = await database.ref(`cart/${req.user.sub}`).once("value")
