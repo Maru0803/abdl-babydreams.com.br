@@ -558,7 +558,7 @@
         "category": "fraldas",
         "image": [
             "https://i.imgur.com/S2EPvk2.png",
-            "https://i.imgur.com/QwjWU7O.png",
+            "https://i.imgur.com/QwjWU7O.png"
         ],
         "names": [
             "Fralda Little Beauty",
@@ -598,7 +598,7 @@
         "category": "fraldas",
         "image": [
             "https://i.imgur.com/eG1vlIj.png",
-            "https://i.imgur.com/eG1vlIj.png",
+            "https://i.imgur.com/eG1vlIj.png"
         ],
         "names": [
             "Fralda Little Princess",
@@ -846,7 +846,7 @@
             "Calcinha de Proteção de Gato",
             "Gato",
             "Calcinha",
-            "Tampa fralda",
+            "Tampa fralda"
         ],
         "price": 90,
         "description": [
@@ -881,7 +881,7 @@
             "Calcinha de Proteção da My Melody",
             "My Melody",
             "Calcinha",
-            "Tampa fralda",
+            "Tampa fralda"
         ],
         "price": 90,
         "description": [
@@ -916,7 +916,7 @@
             "Calcinha de Proteção de Animais",
             "Animais",
             "Calcinha",
-            "Tampa fralda",
+            "Tampa fralda"
         ],
         "price": 90,
         "description": [
@@ -940,4 +940,3 @@
         }
     }
 }
- 
