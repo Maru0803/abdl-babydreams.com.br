@@ -25,7 +25,8 @@ async function clearUserCart (user, type) {
         "pants3": 0, 
         "coala": 0,
         "unicornio": 0, 
-        "furry": 0
+        "furry": 0,
+        "princess": 0
     }
 
     if(type === "itens") database.ref(`cart/${user}`).update(obj)
