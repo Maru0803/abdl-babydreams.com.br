@@ -4,7 +4,9 @@ const produtos = [
     "chupeta3", "fantasma", "huggies", "junior", 
     "pastelpuffies", "ups", "animais",
     "huggies2", "junior2", "ups2", "goodnites2",
-    "goodnites", "littleking", "bunnyhopps"
+    "goodnites", "littleking", "bunnyhopps",
+    "pants1", "pants2", "pants3", 
+    "coala", "unicornio", "furry"
 ]
 
 async function verifyCartEquals (user, cart) {
