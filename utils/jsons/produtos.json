@@ -553,10 +553,83 @@
             "peso": 0.2
         }
     },
+  "furry": {
+        "name": "furry",
+        "category": "fraldas",
+        "image": [
+            "https://i.imgur.com/S2EPvk2.png",
+            "https://i.imgur.com/QwjWU7O.png",
+        ],
+        "names": [
+            "Fralda Little Beauty",
+            "Little Beauty",
+            "Fralda ABDL Little Beautyi",
+            "ABDL",
+            "LFB",
+            "LittleForBig",
+            "Little For Big",
+            "Fralda ABDL",
+            "Fralda"
+        ],
+        "price": 100,
+        "description":  [
+            "Sobre o produto:",
+            "Fralda ABDL Little Beauty LittleForBig",
+            "Tamanho M - 91cm a 122cm",
+            "Anúncio referente a 1 unidade!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
+        "size": [
+            "Tamanho L"
+        ],
+        "count": [
+            "1 Unidade"
+        ],
+        "info": {
+            "largura": 24,
+            "altura": 3,
+            "comprimento": 19,
+            "peso": 0.2
+        }
+    },
 
-
-
-
+ "princess": {
+        "name": "princess",
+        "category": "fraldas",
+        "image": [
+            "https://i.imgur.com/eG1vlIj.png",
+            "https://i.imgur.com/eG1vlIj.png",
+        ],
+        "names": [
+            "Fralda Little Princess",
+            "Little Princess",
+            "Fralda ABDL Little Princess",
+            "ABDL",
+            "CutiePlusU",
+            "Fralda ABDL",
+            "Fralda"
+        ],
+        "price": 100,
+        "description":  [
+            "Sobre o produto:",
+            "Fralda ABDL Little Princess CutiePlusU",
+            "Tamanho M - 93cm a 119cm",
+            "Anúncio referente a 1 unidade!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
+        "size": [
+            "Tamanho L"
+        ],
+        "count": [
+            "1 Unidade"
+        ],
+        "info": {
+            "largura": 24,
+            "altura": 3,
+            "comprimento": 19,
+            "peso": 0.2
+        }
+    },
 
     "chupeta1": {
         "name": "chupeta1",
@@ -687,6 +760,182 @@
             "largura": 8,
             "altura": 0.5,
             "comprimento": 8,
+            "peso": 0.1
+        }
+    },
+
+    "coala": {
+        "name": "coala",
+        "category": "acessorios",
+        "image": [
+            "https://i.imgur.com/xreHhAN.jpeg",
+            "https://i.imgur.com/aktowha.jpeg",
+            "https://i.imgur.com/KeKSo3V.jpeg"
+        ],
+        "names": [
+            "Chupeta Coala",
+            "Chupeta",
+            "Coala"
+        ],
+        "price": 75,
+        "description": [
+            "Sobre o produto:",
+            "Chupeta adulta tamanho 8",
+            "Anúncio referente a com desenho de coala!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
+        "size": [
+            "Tamanho 8"
+        ],
+        "count": [
+            "1 Unidade"
+        ],
+        "info": {
+            "largura": 8,
+            "altura": 0.5,
+            "comprimento": 8,
+            "peso": 0.1
+        }
+    },
+    
+     "uni": {
+        "name": "uni",
+        "category": "acessorios",
+        "image": [
+            "https://i.imgur.com/xreHhAN.jpeg",
+            "https://i.imgur.com/aktowha.jpeg",
+            "https://i.imgur.com/KeKSo3V.jpeg"
+        ],
+        "names": [
+            "Chupeta Unicórnio",
+            "Chupeta Unicornio",
+            "Chupeta",
+            "Unicornio",
+            "Unicórnio"
+        ],
+        "price": 75,
+        "description": [
+            "Sobre o produto:",
+            "Chupeta adulta tamanho 8",
+            "Anúncio referente a com desenho de Unicórnio!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
+        "size": [
+            "Tamanho 8"
+        ],
+        "count": [
+            "1 Unidade"
+        ],
+        "info": {
+            "largura": 8,
+            "altura": 0.5,
+            "comprimento": 8,
+            "peso": 0.1
+        }
+    },
+    
+     "pants1": {
+        "name": "pants1",
+        "category": "acessorios",
+        "image": [
+            "https://i.imgur.com/SGeYyuR.png",
+            "https://i.imgur.com/p4SHpV8.png"
+        ],
+        "names": [
+            "Tampa Fralda Gato",
+            "Calcinha de Proteção de Gato",
+            "Gato",
+            "Calcinha",
+            "Tampa fralda",
+        ],
+        "price": 90,
+        "description": [
+            "Sobre o produto:",
+            "Calcinha tampa fralda Adulto ABDL com estampa fofa de gatinho",
+            "Tamanho M Medidas nas imagens",
+            "Anúncio referente a 1 Peça!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
+        "size": [
+            "Tamanho M"
+        ],
+        "count": [
+            "1 Peça"
+        ],
+        "info": {
+            "largura": 18,
+            "altura": 0.3,
+            "comprimento": 12,
+            "peso": 0.1
+        }
+    },
+    "pants2": {
+        "name": "pants2",
+        "category": "acessorios",
+        "image": [
+            "https://i.imgur.com/scUd2iY.png",
+            "https://i.imgur.com/p4SHpV8.png"
+        ],
+        "names": [
+            "Tampa Fralda My Melody",
+            "Calcinha de Proteção da My Melody",
+            "My Melody",
+            "Calcinha",
+            "Tampa fralda",
+        ],
+        "price": 90,
+        "description": [
+            "Sobre o produto:",
+            "Calcinha tampa fralda Adulto ABDL com estampa fofa da My Melody",
+            "Tamanho M Medidas nas imagens",
+            "Anúncio referente a 1 Peça!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
+        "size": [
+            "Tamanho M"
+        ],
+        "count": [
+            "1 Peça"
+        ],
+        "info": {
+            "largura": 18,
+            "altura": 0.3,
+            "comprimento": 12,
+            "peso": 0.1
+        }
+    },
+    "pants3": {
+        "name": "pants3",
+        "category": "acessorios",
+        "image": [
+            "https://i.imgur.com/6rfOYGw.jpeg",
+            "https://i.imgur.com/p4SHpV8.png"
+        ],
+        "names": [
+            "Tampa Fralda My Melody",
+            "Calcinha de Proteção de Animais",
+            "Animais",
+            "Calcinha",
+            "Tampa fralda",
+        ],
+        "price": 90,
+        "description": [
+            "Sobre o produto:",
+            "Calcinha tampa fralda Adulto ABDL com estampa fofa de Animais",
+            "Tamanho M Medidas nas imagens",
+            "Anúncio referente a 1 Peça!",
+            "ABDL / Agere / AgePlay / DDLG"
+        ],
+        "size": [
+            "Tamanho L"
+        ],
+        "count": [
+            "1 Peça"
+        ],
+        "info": {
+            "largura": 18,
+            "altura": 0.3,
+            "comprimento": 12,
             "peso": 0.1
         }
     }
